@@ -1,0 +1,26 @@
+{
+  "name": "cypressdash",
+  "version": "1.0.0",
+  "description": "ini adalah test cypress dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damarmustikoaji/ralalicom_cypress.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "damar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damarmustikoaji/ralalicom_cypress/issues"
+  },
+  "homepage": "https://github.com/damarmustikoaji/ralalicom_cypress#readme",
+  "devDependencies": {
+    "cypress": "^3.1.5",
+    "cypress-xpath": "^1.3.0"
+  }
+}

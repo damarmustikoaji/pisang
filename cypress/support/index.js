@@ -20,3 +20,15 @@ import './commands'
 // require('./commands')
 
 require('cypress-xpath')
+
+// now any cookie with the name 'session_id' will
+// not be cleared before each test runs
+//Cypress.Cookies.defaults({
+//  whitelist: 'session_id'
+//})
+
+Cypress.on('uncaught:exception', (err, runnable) => {
+    return false;
+});
+
+Cypress.on('fail', (err, runnable) => {return false});
