@@ -18,9 +18,9 @@ Automation test aplikasi e-commerce Ralali.com menggunakan Cypress untuk tools p
 - Atau project bisa di buka di Cypress GUI
 
 ## Run
-- npx cypress run
+- `npx cypress run`
 
-###### Enviroment
+## Enviroment
 - Buka cypress.json dan ubah pada variable "env"
 
 # Project
