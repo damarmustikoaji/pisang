@@ -1,11 +1,15 @@
 {
-  "projectId": "g8gnbs",
+  "projectId": "4jttev",
   "defaultCommandTimeout": 10000,
   "animationDistanceThreshold": 5,
   "baseUrl": null,
-  "blacklistHosts": null,
+  "blockHosts": null,
   "chromeWebSecurity": null,
-  "env": {},
+  "env": {
+    "host": "https://ralali.com",
+    "emailtest": "jambhu@protonmail.com",
+    "passwordtest": "ralalidotcom"
+  },
   "execTimeout": 60000,
   "fileServerFolder": "",
   "fixturesFolder": "cypress/fixtures",
@@ -25,7 +29,7 @@
   "testFiles": "**/*.*",
   "trashAssetsBeforeRuns": true,
   "userAgent": "Testing",
-  "video": false,
+  "video": true,
   "videoCompression": 32,
   "videoUploadOnPasses": true,
   "videosFolder": "cypress/videos",

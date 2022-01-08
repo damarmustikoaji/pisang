@@ -1,14 +1,14 @@
 {
-  "name": "cypressdash",
+  "name": "pisang",
   "version": "1.0.0",
-  "description": "ini adalah test cypress dashboard",
+  "description": "ini adalah test cypress untuk ralalicom",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "testing": "npx cypress run --record --key 630ad779-e17d-4233-9e3f-465d4d11531b"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/damarmustikoaji/ralalicom_cypress.git"
+    "url": "git+https://github.com/damarmustikoaji/pisang.git"
   },
   "keywords": [
     "cypress"
@@ -16,9 +16,9 @@
   "author": "damar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/damarmustikoaji/ralalicom_cypress/issues"
+    "url": "https://github.com/damarmustikoaji/pisang/issues"
   },
-  "homepage": "https://github.com/damarmustikoaji/ralalicom_cypress#readme",
+  "homepage": "https://github.com/damarmustikoaji/pisang#readme",
   "devDependencies": {
     "cypress": "^3.1.5",
     "cypress-xpath": "^1.3.0"
