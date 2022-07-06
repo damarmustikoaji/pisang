@@ -1,7 +1,7 @@
 import "../support/public_steps";
 
-describe('Ralalicom - Login Valid', function() {
-  it('Valid Data', function() {
+describe('Ralalicom - Login Positive', function() {
+  it.skip('Valid Data', function() {
     cy.server()
     cy.route('POST', '/auth/v3/token').as('login')
 
@@ -26,7 +26,7 @@ describe('Ralalicom - Login Valid', function() {
   })
 })
 
-describe('Ralalicom - Login Fail', function() {
+describe('Ralalicom - Login Negative 1', function() {
   it('Invalid Email', function() {
     cy.server()
     cy.route('POST', '/auth/v3/token').as('login')
@@ -52,7 +52,7 @@ describe('Ralalicom - Login Fail', function() {
   })
 })
 
-describe('Ralalicom - Login Fail', function() {
+describe('Ralalicom - Login Negative 2', function() {
   it('Wrong Password', function() {
     cy.server()
     cy.route('POST', '/auth/v3/token').as('login')
@@ -78,7 +78,7 @@ describe('Ralalicom - Login Fail', function() {
   })
 })
 
-describe('Ralalicom - Login Fail', function() {
+describe('Ralalicom - Login Negative 3', function() {
   it('Not Verified', function() {
     cy.server()
     cy.route('POST', '/auth/v3/token').as('login')
@@ -104,7 +104,7 @@ describe('Ralalicom - Login Fail', function() {
   })
 })
 
-describe('Ralalicom - Login Fail', function() {
+describe('Ralalicom - Login Negative 4', function() {
   it.skip('Test Skip Type', function() {
     cy.server()
     cy.route('POST', '/auth/v3/token').as('login')

@@ -2,7 +2,7 @@ import "../support/public_steps";
 import "../support/forgot_steps";
 
 describe('Ralalicom - Forgot Valid', function() {
-  it('Valid Data', function() {
+  it.skip('Valid Data', function() {
     cy.server()
     cy.route('POST', '/auth/v3/users/verification').as('verification')
 
