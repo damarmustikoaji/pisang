@@ -4,7 +4,7 @@
   "description": "ini adalah test cypress untuk ralalicom",
   "main": "index.js",
   "scripts": {
-    "testing": "npx cypress run --record --key 630ad779-e17d-4233-9e3f-465d4d11531b"
+    "testing": "npx cypress run --record --key e677bf38-64a2-46e0-8ba8-6149f3b0b754"
   },
   "repository": {
     "type": "git",
