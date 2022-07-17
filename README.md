@@ -1,3 +1,4 @@
+[![End-to-end tests](https://github.com/damarmustikoaji/pisang/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/damarmustikoaji/pisang/actions/workflows/main.yml)
 [![Python](https://img.shields.io/badge/Cypress-3.1.5-green.svg)](https://www.cypress.io/)
 [![Selenium](https://img.shields.io/badge/JavaScript-yellow.svg)](https://www.javascript.com/)
 
