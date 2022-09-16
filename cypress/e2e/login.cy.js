@@ -48,7 +48,7 @@ describe('Ralalicom - Login Negative 1', function() {
       expect(xhr.method).to.eq('POST')
     })
 
-    cy.contains("Email atau No. Handphone Belum Terdaftar")
+    cy.contains("Email atau kata sandi yang Anda masukkan salah.")
   })
 })
 
