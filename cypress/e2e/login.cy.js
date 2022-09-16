@@ -43,7 +43,7 @@ describe('Ralalicom - Login Negative 1', function() {
     cy.wait('@login')
     //Assert on XHR
     cy.get('@login').then(function (xhr) {
-      expect(xhr.status).to.eq(200)
+      expect(xhr.status).to.eq(403)
       expect(xhr.requestHeaders).to.have.property('Content-Type')
       expect(xhr.method).to.eq('POST')
     })
