@@ -2,8 +2,6 @@ name: End-to-end tests
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
   schedule:
     - cron:  '30 07 * * 1-5'
 jobs:
