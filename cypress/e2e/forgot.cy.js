@@ -50,7 +50,7 @@ describe('Ralalicom - Forgot Invalid', function() {
       expect(xhr.method).to.eq('POST')
     })
 
-    cy.contains("email tidak valid")
+    cy.contains("Kode verifikasi dikirimkan apabila akun sudah terdaftar.")
 
   })
 })
