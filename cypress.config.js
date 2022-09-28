@@ -4,5 +4,8 @@ module.exports = {
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    video: true,
+    videoCompression: 15,
+    videosFolder: 'cypress/videos',
   },
 };
