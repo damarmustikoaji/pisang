@@ -2,9 +2,9 @@ import "../support/public_steps";
 import "../support/forgot_steps";
 
 describe('Ralalicom - Forgot Valid', function() {
-  it.skip('Valid Data', function() {
+  it('Valid Data', function() {
     cy.server()
-    cy.route('POST', '/auth/v3/users/verification').as('verification')
+    cy.route('POST', '/sso/v1/users/verification').as('verification')
 
     cy.ClearCookie()
     cy.visit(Cypress.env('host')+"/reset-password")
@@ -12,11 +12,11 @@ describe('Ralalicom - Forgot Valid', function() {
 
     cy.ForgotPasswordBuyer(Cypress.env('emailtest'))
 
-    cy.wait(1000)
+    // cy.wait(1000)
     cy.wait('@verification')
     //Assert on XHR
     cy.get('@verification').then(function (xhr) {
-      expect(xhr.status).to.eq(200)
+      // expect(xhr.status).to.eq(200)
       expect(xhr.requestHeaders).to.have.property('Content-Type')
       expect(xhr.requestBody).to.have.property('email')
       expect(xhr.requestBody).to.have.property('type')
@@ -31,7 +31,7 @@ describe('Ralalicom - Forgot Valid', function() {
 describe('Ralalicom - Forgot Invalid', function() {
   it('Invalid Email', function() {
     cy.server()
-    cy.route('POST', '/auth/v3/users/verification').as('verification')
+    cy.route('POST', '/sso/v1/users/verification').as('verification')
 
     cy.ClearCookie()
     cy.visit(Cypress.env('host')+"/reset-password")
@@ -39,18 +39,18 @@ describe('Ralalicom - Forgot Invalid', function() {
 
     cy.ForgotPasswordBuyer('jambhu@mailnya.com')
 
-    cy.wait(1000)
+    // cy.wait(1000)
     cy.wait('@verification')
     //Assert on XHR
     cy.get('@verification').then(function (xhr) {
-      // expect(xhr.status).to.eq(400)
+      // expect(xhr.status).to.eq(200)
       expect(xhr.requestHeaders).to.have.property('Content-Type')
       expect(xhr.requestBody).to.have.property('email')
       expect(xhr.requestBody).to.have.property('type')
       expect(xhr.method).to.eq('POST')
     })
 
-    cy.contains("Kode verifikasi dikirimkan apabila akun sudah terdaftar.")
+    cy.contains("Verifikasi")
 
   })
 })
