@@ -6,7 +6,7 @@ module.exports = {
     },
     screenshotOnRunFailure: true,
     screenshotsFolder: 'cypress/screenshots',
-    video: true,
+    video: false,
     videoCompression: 15,
     videosFolder: 'cypress/videos',
     videoUploadOnPasses: true
